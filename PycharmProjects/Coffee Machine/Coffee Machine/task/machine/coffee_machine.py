@@ -5,6 +5,7 @@ class CoffeeMachine:
         self.beans = beans
         self.cups = cups
         self.money = money
+        self.new_material = []  # only way i could figure out to have get_integer function to be used to fill
 
     def print_state(self):
         print(f'''\nThe coffee machine has:
@@ -58,17 +59,28 @@ class CoffeeMachine:
                 continue
         print()
 
+    def get_integer(self, new_material):
+        while True:
+            try:
+                new_material = int(input(f"Write how many {new_material} you want to add:\n"))
+                self.new_material.append(new_material)
+            except ValueError:
+                print("Sorry, I did not understand that.\n")
+                continue
+            else:
+                break
+
     def fill(self):
-        new_water = int(input("Write how many ml of water you want to add:\n"))
-        self.water += new_water
-        new_milk = int(input("Write how many ml of milk you want to add:\n"))
-        self.milk += new_milk
-        new_beans = int(input("Write how many grams of coffee beans you want to add:\n"))
-        self.beans += new_beans
-        new_cups = int(input("Write how many disposable cups you want to add:\n"))
-        self.cups += new_cups
+        self.new_material.clear()
+        self.get_integer("ml of water")
+        self.water += self.new_material[0]
+        self.get_integer("ml of milk")
+        self.milk += self.new_material[1]
+        self.get_integer("grams of coffee beans")
+        self.beans += self.new_material[2]
+        self.get_integer("disposable cups")
+        self.cups += self.new_material[3]
         print()
-    # this is repetitive
 
     def take(self):
         print(f"I gave you ${self.money}\n")
