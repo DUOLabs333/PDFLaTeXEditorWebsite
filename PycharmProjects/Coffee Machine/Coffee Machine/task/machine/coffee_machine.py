@@ -88,7 +88,7 @@ class CoffeeMachine:
             elif action == "exit":
                 break
             else:
-                print("Sorry, I did not understand that.")
+                print("Sorry, I did not understand that.\n")
                 continue
 
 
