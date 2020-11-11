@@ -71,7 +71,11 @@ class CoffeeMachine:
                 break
 
     def fill(self):
+<<<<<<< HEAD
         self.new_material.clear()  # this list needs to be cleared everytime fill is ran
+=======
+        self.new_material.clear()
+>>>>>>> 71e197def5a1c16d75d8db4f9bfe73a688e3308d
         self.get_integer("ml of water")
         self.water += self.new_material[0]
         self.get_integer("ml of milk")
