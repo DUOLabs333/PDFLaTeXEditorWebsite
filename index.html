@@ -15,11 +15,8 @@
 		<div class="content">
 			<h2> What is this for?</h2>
 			<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ligula orci,
-			dignissim pretium justo tincidunt non. Aenean at elit a erat vehicula placerat eget 
-			et turpis. Aliquam tortor odio, blandit id nisi vitae, suscipit ullamcorper tortor. 
-			Phasellus quis augue luctus, ultricies sem pulvinar, viverra risus. Morbi eget convallis diam,
-			</p>
+			Currently there are no programs where you can add LaTeX formulas to a pdf while keeping the pdf as a pdf file. Other programs right now first convert the pdf
+			to an image before you can add LaTeX formulas. This program provides a simple GUI where you can load multiple pdfs and add LaTeX formulas to them. </p>
 			<h2> Wait, what's LaTeX?</h2>
 			<p>
 			LateX is a document preparation system that formats text for the author. It is especially great math 
@@ -28,13 +25,13 @@
 			</p>
 			<h2> How to use this?</h2>
 			<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ligula orci,
-			dignissim pretium justo tincidunt non. Aenean at elit a erat vehicula placerat eget 
-			et turpis. Aliquam tortor odio, blandit id nisi vitae, suscipit ullamcorper tortor. 
-			Phasellus quis augue luctus, ultricies sem pulvinar, viverra risus. Morbi eget convallis diam,
+			1. Open PDFLaTeXEditor.py with Python. You should see a simple GUI with a blank PDF with a "Load" and "Open" button on the left. You can press "Load" to open up a file dialog to 			select a file. You can choose a PDF file to convert into a duo file, or open a converted .duo file. After selecting, you press "Open" to open it. On the left, there are also a 			listbox where you can select the page you want to go to.
 			</p>
 			<h2> How to download? </h2>
-			<p> Go to Github repository linked above and ...</p>
+			<p> 1. Go to Github repository linked above and and download the folder </p>
+			<p> 2. Make sure you have Python 3.9 installed. If not, you can get it at the <a href=https://www.python.org/downloads/ target="_blank" rel="noopener noreferrer"> Python website 			</a>. </p>
+			<p> 3. Make sure you have all needed modules (you can check by opening up PDFLaTeXEditor.py in IDLE and check under Dependencies. For each ModuleName (of form import ModuleName), 			you can check in Command Line by doing python -m ModuleName. If it's not there, do simply pip install ModuleName. </p>
+			<p> 4. Set up your export and import paths (importDir will be where you want the program to open your PDFs and output the .duo files to, exportDir is where you want the program 			to output the edited PDFs at). Also set up the pdftocairoPath, which is the path where pdftocairo.exe is, and the libPath, which is where the lib folder in PDFLaTeXEditor 				is. </p>
 		</div>
 		<div class="images">
 			<br>
