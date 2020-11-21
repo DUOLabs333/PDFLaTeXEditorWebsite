@@ -16,7 +16,7 @@
 			<h2> What is this for?</h2>
 			<p>
 			Currently there are no programs where you can add LaTeX formulas to a pdf while keeping the pdf as a pdf file. Other programs right now first convert the pdf
-			to an image before you can add LaTeX formulas. This program provides a simple GUI where you can load multiple pdfs and add LaTeX formulas to them. </p>
+			to an image before you can add LaTeX formulas. This program provides a simple GUI where you can load multipage pdfs and add LaTeX formulas to them. </p>
 			<h2> Wait, what's LaTeX?</h2>
 			<p>
 			LateX is a document preparation system that formats text for the author. It is especially great math 
@@ -35,14 +35,31 @@
 					 For each ModuleName (of form import ModuleName), you can install it by doing pip install ModuleName. If it exists, then it won't do anything. </li>
 				<br>
 				<li> Set up your export and import paths (importDir will be where you want the program to open your PDFs and output the .duo files to, exportDir is where you want the program
-					to output the edited PDFs at). Also set up the pdftocairoPath, which is the path where pdftocairo.exe is, and the libPath, which is where the lib folder in PDFLaTeXEditor is. </li>
+					to output the edited PDFs at). Also set up the inkscapePath, which is the path where inkscape.exe is; drawPath, which is the path where LibreOfficeDrawPortable.exe is;
+					and libPath, which is where the lib folder in PDFLaTeXEditor is. </li>
 			</ol>
-			<h2> How to use?</h2>
+			<h2> How do I use it?</h2>
 			<ol type="1">
-				<li>Open PDFLaTeXEditor.py with Python. You should see a simple GUI with a blank PDF with a "Load" and "Open" button on the left. 
-					You can press "Load" to open up a file dialog to select a file. You can choose a PDF file to convert into a duo file, or open a 
-					converted .duo file. After selecting, you press "Open" to open it. On the left, there are also a listbox where you can select the
-					page you want to go to. </li>
+				<li> Open PDFLaTeXEditor.py with Python. You should see a simple GUI with a blank PDF with a "Load" and "Open" button on the left, 
+					and "Save" and "Export" buttons under them. </li>
+				<br>
+				<li> You can press "Load" to open up a file dialog to select a file. You can choose a PDF file to convert into a duo file, or open a 
+					converted .duo file. After selecting, you press "Open" to open it. </li>
+				<br>
+				<li> On the left, there is a listbox where you can select the page you want to go to. </li>
+				<br>
+				<li> Once you select a page, you can open it in LibreOffice Draw by pressing Ctrl+o. </li>
+				<br>
+				<li> Once in LO Draw, you can add LaTeX boxes by clicking the blue "π" sign in the corner. 
+					For more information, refer to <a href="http://roland65.free.fr/texmaths/docs.html" target="_blank" rel="noopener noreferrer"> here </a>. </li>
+				<br>
+				<li> In LO Draw, you must save your changes by clicking Ctrl+s. Once you're done with a page, you can go back to the main PDFLaTeXEditor tool by simply exiting
+					the LO page. </li>
+				<br>
+				<li> Once you're done with a document, click the "Save" button and it will go back to its "blank page" state. You can also close the window and the tool will
+					automatically save the file for you.</li>
+				<br>
+				<li> You can export your new edited file into a PDF by simply pressing the "Export" button and choosing what the file should be saved as.
 			</ol>
 			<br>
 		</div>
